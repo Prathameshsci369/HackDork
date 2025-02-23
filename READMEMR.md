@@ -34,7 +34,7 @@ git clone https://github.com/Prathameshsci369/HackDork.git
 ### Playwright प्रतिष्ठापीत करा
 
 ```bash
-pip install playwright requests random
+pip install playwright requests 
 playwright install
 ```
 

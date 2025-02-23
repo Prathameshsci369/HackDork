@@ -102,10 +102,11 @@ class Dorks:
 
     def get_private_routers_dorks(self):
         return [
-            "inurl:(router | gateway | modem) intitle:login",
-            "inurl:(router | gateway | modem) intext:'Administration'",
-            "inurl:(router | gateway | modem) intext:'Configuration'"
+            f"site:{self.domain} inurl:(router | gateway | modem) intitle:login",
+            f"site:{self.domain} inurl:(router | gateway | modem) intext:'Administration'",
+            f"site:{self.domain} inurl:(router | gateway | modem) intext:'Configuration'"
         ]
+        
 
     def get_login_pages_dorks(self):
         return [

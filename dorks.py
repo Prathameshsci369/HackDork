@@ -14,6 +14,7 @@ class Dorks:
             f"site:{self.domain} (inurl:backup | inurl:old | inurl:archive)",
             f"site:{self.domain} (inurl:temp | inurl:tmp | inurl:cache)",
             f"site:{self.domain} (inurl:debug | inurl:trace | inurl:log)"
+            
         ]
 
     def get_subdomain_dorks(self):
@@ -60,6 +61,12 @@ class Dorks:
             f"site:(onedrive.live.com | sharepoint.com) '{self.domain}'",
             f"site:(digitaloceanspaces.com | dropbox.com/s | box.com/s) '{self.domain}'",
             f"site:(jfrog.io | firebaseio.com) '{self.domain}'"
+            f"site:{self.domain} (s3.amazonaws.com | s3-external-1.amazonaws.com | s3.dualstack.us-east-1.amazonaws.com)",
+            f"site:{self.domain} (blob.core.windows.net | dev.azure.com)",
+            f"site:{self.domain} (googleapis.com | drive.google.com | docs.google.com inurl:'/d/')",
+            f"site:{self.domain} (onedrive.live.com | sharepoint.com)",
+            f"site:{self.domain} (digitaloceanspaces.com | dropbox.com/s | box.com/s)",
+            f"site:{self.domain} (jfrog.io | firebaseio.com)"
         ]
 
     def get_code_docs_dorks(self):
